@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willow Tree Stables</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    }
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      font-family: Papyrus, fantasy;
+    }
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 150px;
+      font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+    h3 {
+      text-align: center;
+      font-size: 20px;
+      font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+    h4 {
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 60%;
+      border-radius: 5px;
+      padding: 
+    }
+    p {
+        line-height: 1.5;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+    a {
+        font-size: 14px;
+    }
+    button {
+      display: block;
+      padding: 10px 20px;
+      margin: 0 auto;
+      color: white;
+      font-size: 16px;
+      background: #0b8f42;
+      border-radius: 7px;
+      border: 2px solid #0b8f42;
+      box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background: white;
+      color: #0b8f42;
+      border: 2px solid white;
+    }
+    .created {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    .creator {
+        text-align: center;
+        font-size: 15px;
+    }
+  </style>
+  <body>
+    <div class="contain">
+      <h1>Willow Tree Stables</h1>
+      <h2>Dressage</h2>
+      <h3>What is it?</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/587/original/dressage.jpg?1637717201"
+        alt="Dressage Horse"
+        width="150px"
+      />
+      <br />
+      <br />
+      <h4>Defining <em>Dressage</em></h4>
+      <p>
+        The images of top level dressage riders executing intricate movements in
+        a tailcoat may seem out of reach to some, but dressage is about so much
+        more. The word 'dressage' comes from the French term, 'dresseur' meaning
+        'training' and adding just a few minutes of it into your daily routine
+        can help in many ways. Dressage is all about learning to work with your
+        horse and help him achieve greater suppleness, flexibility and
+        obedience; enhance his natural movements and ability and improve his
+        athleticism. It's for exactly these reasons that dressage was originally
+        developed by the cavalry in the 17th century – after all, having an
+        unresponsive or undisciplined horse on the battlefield could have meant
+        the difference between life or death. Only later did it develop into
+        some of the more flamboyant moves still seen today at the Spanish Riding
+        School of Vienna. As with many equestrian sports, necessity on the
+        battlefield, developed into the sporting spectacle we now enjoy. As a
+        sport, dressage is all about putting training into practice in front of
+        a judge (or judges) to show how the horse's development is progressing
+        against a set ideal. From the lowest level to the pinnacle, horse and
+        rider perform movements in a rectangular arena and are awarded marks for
+        their efforts by a judge or panel of judges.
+      </p>
+      <a
+        href="https://www.britishdressage.co.uk/our-sport/all-about-dressage/"
+        targer="_blank"
+        class="learn-more"
+      >
+        Learn more on BritishDressage.co.uk
+      </a>
+      <br />
+      <br />
+      <br />
+      <br />
+      <button>Clinic Sign Up</button>
+      <br />
+      <div class="creator">
+      <span class="created">this page was coded by </span>
+      <strong>Katlyn Cyphers</strong>
+    </div>
+    <script>
+        let lesson = prompt("Would you like to sign up for our upcoming Clinic?");
+        lesson = lesson.toLocaleLowerCase();
+        lesson = lesson.trim();
+        if (lesson === "yes") {
+            alert("Great! Sign up below by clicking the Clinic Sign Up button");
+        } else {
+            alert("Enjoy our site, Please feel free to visit our Lessons page");
+        }
+
+        function apply() {
+            let email = prompt("What is your email?")
+            alert("Thank you! Sign up sheet has been sent to your email!")
+        }
+        let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
