@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .weather {
+        text-align: center;
+        font-size: 34px;
+        line-height: 48px;
+        color: #1a64d6;
+      }
+      h1 {
+        color: #1a64d6;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 34px;
+        margin: 0 auto;
+        line-height: 48px;
+      }
+      .today {
+        font-weight: normal;
+      }
+      .high {
+        font-weight: bolder;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      li:hover {
+        background: #fffcea;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        padding: 15px;
+      }
+      button {
+        display: block;
+        padding: 16px 24px;
+        margin: 20px auto;
+        font-size: 16px;
+        background: #1a64d6;
+        border-radius: 30px;
+        border: 1px solid #1a64d6;
+        box-shadow: 5px 6px 5px #c7c7c7;
+        line-height: 22px;
+        transition: all 200ms ease-in-out;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weather">🌤</div>
+    <h1>Currently 21&deg in Tokyo</h1>
+    <h2>
+      <div class="today">
+        13&deg /
+        <span class="high"> 23&deg</span>
+      </div>
+    </h2>
+    <ul>
+      <li>
+        <h3 class="tomorrow">⛈ Tomorrow</h3>
+        <p>10&deg / <strong>22&deg</strong></p>
+      </li>
+      <li>
+        <h3 class="saturday">🌥 Saturday</h3>
+        <p>15&deg / <strong>17&deg</strong></p>
+      </li>
+      <li>
+        <h3 class="sunday">☀ Sunday</h3>
+        <p>25&deg / <strong>28&deg</strong></p>
+      </li>
+    </ul>
+    <br />
+    <button>Change City</button>
+    <p>Coded by Katlyn Cyphers</p>
+  </body>
+</html>
